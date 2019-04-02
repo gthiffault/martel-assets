@@ -1,0 +1,7 @@
+.c-available-jobs {
+	@include spacingZero();
+	h2 {
+		text-align: left;
+	}
+	@include accordionStyle();
+}

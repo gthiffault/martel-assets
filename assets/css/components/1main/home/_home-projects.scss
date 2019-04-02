@@ -1,0 +1,36 @@
+.c-home_projets {
+	@include spacingZero();
+	.c-home_projects_li {
+		figure {
+			background: $globalZero;
+			margin-bottom: 0;
+			position: relative;
+			img {
+  				-webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
+			    filter: grayscale(70%);
+			    opacity: 0.7;
+			    width: 100%;
+			}
+			figcaption {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				padding: 56px 72px;
+				top: 0;
+				h3 {
+					color: $globalOne;
+					text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+				}
+				.c-home_projets_services {
+					position: absolute;bottom: 0;
+				    transform: rotate(-90deg) translateX(0%);
+ 			 	  	transform-origin: 0 0;
+ 			 	  	h4 {
+ 			 	  		color: $globalOne;
+ 			 	  		text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+ 			 	  	}
+				}
+			}
+		}
+	}	
+}

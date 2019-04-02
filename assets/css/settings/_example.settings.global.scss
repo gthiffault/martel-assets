@@ -1,0 +1,68 @@
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+// Standardise some UI treatments.
+
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;
+
+// COLOR
+$globalOne : #FFF;
+$globalZero : #1F1E1E;
+$secondary : #C5A37E;
+$bgZero : #29272C;
+
+
+// HEADER
+$heightZero : 114px;
+
+
+// FONTS
+ html {
+	font-family: 'Open Sans', sans-serif; 	
+ }
+
+ h1,h2,h3,h4,h5,h6,.c-title-page,.c-sidebar_title  {
+	font-family: 'Oswald', sans-serif; 	
+	font-weight: 400;
+	text-transform: uppercase;
+ }
+
+ // SPACINGS
+
+ $spacingZero : 114px;
+
+ @mixin spacingZero() {
+	margin-bottom: 114px;
+}
+
+
+
+
+ // 
+ p,a {
+ 	letter-spacing: 1.14px;
+ 	line-height: 28px;
+ 	font-weight: 300;
+ }
+
+
+
+
+ @mixin accordionStyle() {
+ 	.c-accordion_ul {
+ 		list-style-type: none;
+ 		margin-left: 0;
+		.c-accordion_li {
+			border-top: 1px solid #979797;
+			padding-top: 24px;
+			.c-accordion_content {
+				display: none;
+			}
+		}
+	}
+}	

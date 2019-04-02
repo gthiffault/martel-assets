@@ -1,0 +1,25 @@
+.c-footer {
+	* {
+		color: $globalOne;
+	}	
+	.c-footer_info {
+		padding: 64px 0;
+		background-color: $bgZero;
+		.c-footer_title {
+			font-size: 18px;
+			line-height: 30px;
+			font-weight: 700;
+		}
+		.c-facebook {
+			display: block;
+			height: 18px;
+			width: 10px;
+			background: url(../images/icons/excavation-l-martel-footer-facebook.svg);
+		}		
+	}
+	.c-footer_copyright {
+		background-color: $globalZero;		
+		text-align: center;
+		padding: 16px 0;
+	}
+}

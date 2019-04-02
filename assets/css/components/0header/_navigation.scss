@@ -1,0 +1,55 @@
+.home {
+	.c-header {
+		height: 100vh;
+	}	
+}
+.c-header {
+	@include spacingZero();
+	&.-mb-0 {
+		margin-bottom: 0;
+	}
+	.c-header_nav {
+		background: $globalOne;
+		.c-navigation {
+			display: flex;
+			transition: all 0.15s linear;
+			.c-header_logo {
+				padding: 28px 0;
+				margin-right: auto;
+			}
+			.c-header_logo,.c-header_links,.c-header_button {
+				flex: 0 auto;
+				display: flex;
+				align-items: center;			
+			}
+		}
+	}
+	.c-navigation_ul {
+		margin-bottom: 0;
+		li {
+			display: inline-block;
+			margin-right: 40px;
+			&,* {
+				font-size: 14px;
+				color: $globalZero;
+				font-weight: 600;
+				line-height: 24px;
+				letter-spacing: 2.97px;
+			}
+			a {
+				text-decoration: none;
+			}
+			&.c-language-switcher a {
+				text-transform: uppercase;
+			}
+			&.c-facebook {
+				a {
+					display: block;
+					height: 23px;
+					width: 10px;
+					background: url(../images/icons/excavation-l-martel-header-facebook.svg);
+				}
+			}
+		}
+	}
+}

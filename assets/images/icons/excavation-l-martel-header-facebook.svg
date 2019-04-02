@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="23px" viewBox="0 0 10 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A_PROPOS" transform="translate(-1238.000000, -49.000000)">
+            <g id="icon-facebook" transform="translate(1238.000000, 49.000000)">
+                <polygon id="Clip-2" points="0 0 10 0 10 23 0 23"></polygon>
+                <path d="M10,7.44762591 L6.593567,7.44762591 L6.593567,5.06003964 C6.593567,4.16435695 7.15030128,3.95444539 7.54171264,3.95444539 L9.94347789,3.95444539 L9.94347789,0.0129730746 L6.63396419,0 C2.96121531,0 2.12611389,2.93966267 2.12611389,4.81985758 L2.12611389,7.44762591 L0,7.44762591 L0,11.5071172 L2.12611389,11.5071172 L2.12611389,23 L6.593567,23 L6.593567,11.5071172 L9.60858864,11.5071172 L10,7.44762591 Z" id="Fill-1" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

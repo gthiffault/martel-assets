@@ -1,0 +1,50 @@
+.c-section-w-sidebar {
+	@include spacingZero();
+	position: relative;
+	.c-btn--back {
+		position: absolute;
+		top: 40px;
+		left: 0;
+	}
+	&.c-career_single {
+		.o-wrapper {
+			position: relative;
+		}
+		.c-content {
+			margin-top: 144px;
+			margin-bottom: 0;
+			text-align: left;
+			@include accordionStyle();
+			padding-right: 88px;
+		}
+	}
+	.c-content {
+		h2 {
+			text-align: left;
+		}
+	}	
+	.c-sidebar {
+		background: $secondary;
+		padding: 144px 88px 124px 88px; 
+		ul {
+			margin-bottom: 0;
+			li {
+				color: #FFF;
+				margin-bottom: 64px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				.c-sidebar_title {
+					font-size: 14px;
+					line-height: 40px;
+					letter-spacing: 8px;
+					margin-bottom: 0;
+					text-transform: uppercase;
+				}
+			}
+			span {
+				font-weight: 300;
+			}
+		}
+	}	
+}
