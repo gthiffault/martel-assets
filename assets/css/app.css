@@ -2203,7 +2203,8 @@ table {
   outline: none;
   border: none;
   display: block;
-  max-width: 100%; }
+  max-width: 100%;
+  width: 100%; }
 
 .grid.effect-2 .item.animate {
   -webkit-transform: translateY(200px);
