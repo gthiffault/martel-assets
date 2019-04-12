@@ -15,6 +15,8 @@
 		text-align: left;
 		@include accordionStyle();
 		padding-right: 88px;
+		flex-direction: column;
+		@include spacingZero();
 		&.-google-maps {
 			margin-top: 0;
 			padding-right: 0;

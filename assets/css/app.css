@@ -1997,7 +1997,12 @@ table {
     margin-top: 144px;
     margin-bottom: 0;
     text-align: left;
-    padding-right: 88px; }
+    padding-right: 88px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 114px; }
     .c-section-w-sidebar .c-content .c-accordion_ul {
       list-style-type: none;
       margin-left: 0; }
