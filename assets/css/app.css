@@ -2019,6 +2019,10 @@ table {
       margin-top: 0;
       padding-right: 0;
       z-index: 1;
+      -webkit-box-orient: unset;
+      -webkit-box-direction: unset;
+          -ms-flex-direction: unset;
+              flex-direction: unset;
       padding-left: 0 !important; }
       @media (min-width: 320px) {
         .c-section-w-sidebar .c-content.-google-maps {
