@@ -2023,6 +2023,7 @@ table {
       -webkit-box-direction: unset;
           -ms-flex-direction: unset;
               flex-direction: unset;
+      margin-bottom: 0 !important;
       padding-left: 0 !important; }
       @media (min-width: 320px) {
         .c-section-w-sidebar .c-content.-google-maps {
