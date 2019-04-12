@@ -252,3 +252,9 @@ li:nth-child(7) {
 
 
 }
+
+
+html.-js-menu-active {
+    overflow: hidden;
+    position: fixed;
+}
