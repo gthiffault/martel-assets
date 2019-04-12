@@ -1,0 +1,144 @@
+.c-projects {
+
+	@include spacingZero();
+	ul {
+		margin-bottom: -24px;
+
+	.c-projects_li {
+		margin-bottom: 24px;
+		display: none;
+		figure {
+			background: $globalZero;
+			margin-bottom: 0;
+			position: relative;
+			img {
+  				-webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
+			    filter: grayscale(70%);
+			    opacity: 0.7;
+			    width: 100%;
+			}
+			figcaption {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				padding: 56px 72px;
+				top: 0;
+				h3 {
+					color: $globalOne;
+					text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+				}
+				.c-projects_services {
+					position: absolute;bottom: 0;
+				    transform: rotate(-90deg) translateX(0%);
+ 			 	  	transform-origin: 0 0;
+ 			 	  	h4 {
+ 			 	  		color: $globalOne;
+ 			 	  		text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+ 			 	  	}
+				}
+			}
+		}
+		}
+	}	
+}
+
+.entry {
+  background: #FFF;
+  border: 1px solid rgba(0,0,0,.15);
+  box-shadow: -10px 10px 10px -10px rgba(0,0,0,.35), -10px 10px 0 -3px rgba(0,0,0,.2);
+  margin: 10px auto 20px;
+  overflow: hidden;
+  padding: 20px 40px;
+  position: relative;
+  text-align: center;
+}
+.entry > p {
+  padding: 20px 0 10px;
+}
+.entry > .grid {
+  margin: 20px auto 0px;
+}
+.entry > .grid > .item {
+  width: 50%;
+}
+.grid {
+	max-width: 100vw;
+	list-style: none;
+	padding: 1;
+}
+.grid .item {
+	display: block;
+	float: left;
+	width: 50%;
+	opacity: 1;
+}
+.grid .item a,.grid .item img {
+	outline: none;
+	border: none;
+	display: block;
+	max-width: 100%;
+}
+.grid.effect-2 .item.animate {
+	-webkit-transform: translateY(200px);
+	transform: translateY(200px);
+	-webkit-animation: moveUp 0.65s ease forwards;
+	animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+	0% { }
+	100% { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+	0% { }
+	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+}
+@media screen and (max-width: 900px) {
+	.grid .item {width: 50%;}
+  .entry {box-shadow: none;}
+  .entry > .grid > .item {width: 50%;}
+}
+
+@media screen and (max-width: 400px) {
+	.grid .item {width: 100%;}
+  .entry {padding: 20px 0;}
+  .entry > p {padding: 10px;}
+  .entry > .grid > .item {width: 100%;}
+}
+
+
+
+
+.c-project_navigation {
+	position: absolute;
+	width: 100%;
+	margin-top: 266px;
+	.c-project_navigation_prev,
+	.c-project_navigation_next {
+		z-index: 1;
+		position: absolute;
+		width: 56px;
+		height: 56px;
+		display: block;
+		background: $secondary;
+		text-indent: -9999px;
+		span {
+			background: url('../images/icons/arrows.svg') no-repeat;
+			height: 15px;
+			width: 24px;
+		    background-size: cover !important;
+		    position: absolute;
+		    left: 16px;
+		    top: 20px;
+		}
+	}
+	.c-project_navigation_next {
+		right: 0;
+		span {
+			background-position: -28px 0;
+		}		
+	}
+}
+
+

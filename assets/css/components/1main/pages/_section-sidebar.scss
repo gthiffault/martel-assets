@@ -6,16 +6,30 @@
 		top: 40px;
 		left: 0;
 	}
-	&.c-career_single {
-		.o-wrapper {
-			position: relative;
-		}
-		.c-content {
-			margin-top: 144px;
-			margin-bottom: 0;
-			text-align: left;
-			@include accordionStyle();
-			padding-right: 88px;
+	.o-wrapper {
+		position: relative;
+	}
+	.c-content {
+		margin-top: 144px;
+		margin-bottom: 0;
+		text-align: left;
+		@include accordionStyle();
+		padding-right: 88px;
+		&.-google-maps {
+			margin-top: 0;
+			padding-right: 0;
+			z-index: 1;
+			padding-left: 0 !important;
+						@media (min-width:320px) {
+				width: 66.66%;
+}
+			@media (min-width:1366px) {
+			width: calc((100vw - 1366px)/2 + ((1366px/3)*2) - 8px) !important;
+
+}
+			#google-map {
+				width: 100%;
+			}
 		}
 	}
 	.c-content {
@@ -24,7 +38,6 @@
 		}
 	}	
 	.c-sidebar {
-		background: $secondary;
 		padding: 144px 88px 124px 88px; 
 		ul {
 			margin-bottom: 0;
@@ -48,3 +61,91 @@
 		}
 	}	
 }
+
+.c-career_single {
+	.c-sidebar {
+		background: $secondary;
+	}	
+}
+
+.c-project_single {
+	margin-bottom: 0;
+	.c-sidebar {
+		background: $bgZero;
+		position: relative;
+		.c-sidebar_title {
+			color: $secondary
+		}	
+		:after {
+			position: absolute;
+			content: '';
+			top: 0;
+			width: 100vw;
+			left: 100%;
+			height: 100%;
+			background: $bgZero;
+		}
+	}
+	.c-project-single_content,
+	.c-contact-us {
+		@include spacingZero();		
+	}		
+}	
+
+.c-contact-us {
+	margin-bottom: 0;
+	.c-sidebar {
+		background: $secondary;
+		position: relative;
+		a {
+			color: $globalOne !important;
+		}
+		.c-sidebar_title {
+			color: $globalOne
+		}	
+		:after {
+			position: absolute;
+			content: '';
+			top: 0;
+			width: 100vw;
+			left: 100%;
+			height: 100%;
+			background: $secondary;
+		}
+	}
+	.c-project-single_content,
+	.c-contact-us {
+		@include spacingZero();		
+	}		
+}	
+
+
+	.c-contact-us {
+		@include spacingZero();		
+	}	
+
+
+.c-google-maps {
+	  display: block;
+	  width: 100%;
+  /* [1] */
+  display: flex;
+  flex-wrap: wrap;
+  .-google-maps,
+  -aside {
+  		 display: flex;
+  }
+}
+
+
+.-aside {
+			@media (min-width:320px) {
+				width: 33.33%;
+}	
+			@media (min-width:1366px) {	
+width: calc(1366px/3 - 16px);
+}
+
+}
+
+

@@ -15,6 +15,7 @@ $globalOne : #FFF;
 $globalZero : #1F1E1E;
 $secondary : #C5A37E;
 $bgZero : #29272C;
+$bgOne: #E5E5E5;
 
 
 // HEADER
@@ -44,7 +45,7 @@ $heightZero : 114px;
 
 
  // 
- p,a {
+ p,a,li {
  	letter-spacing: 1.14px;
  	line-height: 28px;
  	font-weight: 300;
@@ -62,6 +63,16 @@ $heightZero : 114px;
 			padding-top: 24px;
 			.c-accordion_content {
 				display: none;
+			}
+			h3 {
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			&:last-child {
+				p:last-child {
+					margin-bottom: 0;
+				}
 			}
 		}
 	}

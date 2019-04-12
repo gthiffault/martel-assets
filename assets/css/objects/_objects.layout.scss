@@ -131,10 +131,10 @@ $inuit-use-markup-fix: false !default;
 /**
  * 1. Same height for layout-items.
  */
-// .layout--equal-height .o-layout__item {
-//   display: flex;
-//   /* [1] */
-// }
+.layout--equal-height .o-layout__item {
+  display: flex;
+  /* [1] */
+}
 
 
 

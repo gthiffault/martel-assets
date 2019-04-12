@@ -39,6 +39,7 @@
       margin: auto;  
       z-index: 1;
       padding: 0 $inuit-global-spacing-unit;
+      flex-direction: column;
     }
     .c-go-down-button {
       position: absolute;

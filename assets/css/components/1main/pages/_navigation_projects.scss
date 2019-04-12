@@ -1,0 +1,55 @@
+
+
+	.c-navigation_projects {
+			margin-bottom: $heightZero/2;
+		ul {
+			text-align: center;
+			margin-bottom: 0;
+			li {
+			    font-family: 'Oswald', sans-serif;
+			    font-size: 18px;
+			    line-height: 30px;
+			    letter-spacing: 1.75px;
+			    text-transform: uppercase;
+			    text-align: center;
+			    margin-left: 116px;
+				color: $secondary;
+				position: relative;
+				&.active {
+					color: $globalZero;
+				}
+				&:focus {
+					outline: none;
+				}
+				&:hover {
+					cursor: pointer;
+					color: $globalZero;
+				}
+				&.slick-slide:after {
+					display: none;
+				}				
+				&.slick-active:after {
+					display: block;
+					position: absolute;
+					content: "";
+					height: 9px;
+					width: 9px;
+					border-radius: 100%;
+					background: $secondary;
+					right: -58px;
+					top: 50%;
+					transform: translate(0,-50%);
+				}
+				
+				&:first-child {
+					margin-left:0;
+				}
+
+			}
+
+// .slick-active + .slick-active:after  {
+//   	display: none;
+// }
+
+		}
+	}

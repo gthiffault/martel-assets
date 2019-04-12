@@ -152,6 +152,10 @@
 		@import "components/1main/pages/accordion";
 		@import "components/1main/pages/available-jobs";
 		@import "components/1main/pages/section-sidebar";
+		@import "components/1main/pages/projects";
+		@import "components/1main/pages/form";
+		@import "components/1main/pages/services";
+		@import "components/1main/pages/navigation_projects";
 		
 	// GLOBALE	
 		@import "components/1main/global/contact-us_link";
@@ -182,5 +186,7 @@ $inuit-offsets: true;
 @import "utilities/utilities.hide";
 
 
-// GLOBAL 
+// VENDORS 
 	@import "vendors/hamburgers";
+	@import "vendors/slick";
+	@import "vendors/slick-theme";

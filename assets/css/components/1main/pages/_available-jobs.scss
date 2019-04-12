@@ -4,4 +4,13 @@
 		text-align: left;
 	}
 	@include accordionStyle();
+	h3 {
+		a {
+			color: $globalZero;
+			text-decoration: none;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
 }
