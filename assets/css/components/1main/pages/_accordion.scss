@@ -5,3 +5,96 @@
 	}
 	@include accordionStyle();
 }
+
+
+   .o-section.-accordion  hr {
+                margin-bottom: 12px;
+            }
+
+            .c-accordion_div {
+                display: none;
+            }
+            .c-accordion_div_animation {
+                position: relative;
+            }
+            .c-accordion_div p:first-child {
+                padding-top: 28px;
+            }
+
+            .c-accordion_title {
+                margin-bottom: 12px;
+                padding-right: 44px;
+                position: relative;
+            }
+            .c-accordion_title:hover {
+                cursor: pointer;
+            }
+
+            .js-parent-active {
+              opacity: 1;
+            }
+
+            .-hidden .vertical {
+              transition: all 0.4s ease-in-out;
+              transform: rotate(-90deg);
+            }            
+
+            .-hidden .horizontal {
+              transition: all 0.4s ease-in-out;
+              transform: rotate(-90deg);
+              opacity: 1;
+            }
+            .js-parent-active .vertical {
+              transition: all 0.4s ease-in-out;
+              transform: rotate(90deg);
+            }
+            .js-parent-active .horizontal {
+              transition: all 0.4s ease-in-out;
+              transform: rotate(90deg);
+              opacity: 0;
+            }
+
+            .c-accordion_div.-video {
+              margin-bottom: 48px;
+            }
+
+            .c-accordion-toggle {
+                height: 20px;
+                width: 20px;
+                font-size: 1em;
+                opacity: .7;
+                position: absolute;
+                right: 0;
+                z-index: -1;
+                top: 50%;
+                margin-top: -10px;
+            }
+
+            .c-faq_question .c-accordion-toggle {
+				left: 0;
+            }	
+            .c-accordion-toggle .c-accordion-toggle-x {
+                position: relative;
+                width: 20px;
+                height: 20px;
+            }
+            .c-accordion-toggle .c-accordion-toggle-x .horizontal {
+                position: absolute;
+                background-color: $globalZero;
+                width: 20px;
+                height: 2px;
+                left: 50%;
+                margin-left: -10px;
+                top: 50%;
+                margin-top: -1px;
+            }
+            .c-accordion-toggle .c-accordion-toggle-x .vertical {
+                position: absolute;
+                background-color: $globalZero;
+                width: 2px;
+                height: 20px;
+                left: 50%;
+                margin-left: -1px;
+                top: 50%;
+                margin-top: -10px;
+            }
