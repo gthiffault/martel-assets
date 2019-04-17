@@ -145,6 +145,9 @@
 
 .-aside {
 			@media (min-width:320px) {
+				width: 100%;
+}		
+			@media (min-width:840px) {
 				width: 33.33%;
 }	
 			@media (min-width:1366px) {	

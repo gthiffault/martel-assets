@@ -5,11 +5,22 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: calc(100% - #{$heightZero});
+        
         z-index: -1;
         overflow: hidden;
         display: flex;
-        top: $heightZero;
+        @media (min-width: 320px) {
+            height: calc(100% - 89px);
+            top: 89px;
+        }                
+        @media (min-width: 840px) {
+            height: calc(100% - 96px);
+            top: 96px;
+        }          
+        @media (min-width: 1280px) {
+            height: calc(100% - #{$heightZero});
+            top: $heightZero;
+        }        
         background: #000;
         iframe {
             width: 100vw;

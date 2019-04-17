@@ -6,20 +6,53 @@
 	}
 	.c-services_flex {
 		position: relative;
+		@media (max-width: 960px){
+			margin-left: 0 !important;
+		}			
 	}
 	.c-image {
-		position: absolute;
-		width: 66%;
+		@media (min-width: 720px){
+			width: 75%;
+			z-index: 1;
+			position: relative;
+		}	
+		@media (min-width: 840px){
+			width: 70%;
+		}		
+		@media (min-width: 960px){
+			position: absolute;
+			width: 66%;
+			z-index: 0;
+		}
 		height: 100%;
 		top: 0;
+		@media (max-width: 719px){
+			margin-top: 24px;
+		}			
+		@media (min-width: 720px){
 			margin-top: -80px;
+		}	
 		img {
 			width: 100%;
 		}
 	}
 	.c-services_content {
+		@media (min-width: 320px){
+		width: 100%;
+		padding: 80px 24px 56px;
+		}		
+		@media (min-width: 720px){
+		width: 80%;
+		padding: 80px 32px 134px;
+		}				
+		@media (min-width: 840px){
+		width: 75%;
+		padding: 80px 40px 134px;
+		}		
+		@media (min-width: 960px){
 		width: 45%;
 		padding: 80px 48px 134px;
+		}
 		text-align: left;
 		color: #FFF;
 		position: relative;
@@ -32,10 +65,20 @@
 		margin-bottom: 56px;
 		.c-services_content {
 			background: $secondary;
-			margin-top: calc(114px + 80px);
+			
+			@media (min-width: 320px){
+				margin-top: 80px;
+			}		
+			@media (min-width: 1024px){
+				margin-top: calc(96px + 80px);
+			}		
+			@media (min-width: 1280px){
+				margin-top: calc(114px + 80px);
+			}			
 		}		
 		.c-image {
 			right: 0;
+			float: right;
 		}
 	}
 	.c-services-one {
@@ -43,20 +86,38 @@
 		.c-services_content {
 			background: $globalZero;
 			margin-left: auto;
-			margin-top: 136px;
+			
+			@media (max-width: 960px){
+				margin-top: 0;
+			}
+			@media (min-width: 961px){
+				margin-top: 88px;
+			}			
 		}		
 		.c-image {
 			left: 0;
+			margin-top: 0;
+			float: left;
+			@media (max-width: 960px){
+				padding-left: 0 !important;
+				margin-top: -80px;				
+			}								
 		}
 	}
 	.c-services-two {
 		margin-bottom: 50px;
 		.c-services_content {
 			background: $secondary;
-			margin-top: 136px;
+			@media (max-width: 960px){
+				margin-top: 0;
+			}
+			@media (min-width: 961px){
+				margin-top: 136px;
+			}				
 		}		
 		.c-image {
 			right: 0;
+			float: right;
 		}
 	}
 	ul {

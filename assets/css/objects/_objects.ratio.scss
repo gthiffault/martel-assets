@@ -121,6 +121,28 @@ $inuit-ratios: (
 }
 }  
 
+@media only screen and (max-width: 1024px) {
+@each $ratio-name, $ratio-value in $inuit-ratios {
+
+  @each $antecedent, $consequent in $ratio-value {
+
+    @if (type-of($antecedent) != number) {
+      @error "`#{$antecedent}` needs to be a number.";
+    }
+
+    @if (type-of($consequent) != number) {
+      @error "`#{$consequent}` needs to be a number.";
+    }
+
+    .o-ratio--#{$ratio-name}\@960:before {
+      padding-bottom: ($consequent/$antecedent) * 100%;
+    }
+
+  }
+
+}
+}  
+
 
 /* Contain modifier.
    ========================================================================== */

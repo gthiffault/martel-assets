@@ -3,27 +3,62 @@
 	color: $globalOne;
 	.c-grid-container {
 	    display: grid;
-	    grid-template: repeat(1, [row] minmax(104px, 1fr))/repeat(2, [col] 1fr);
+	    @media (min-width: 1024px) {
+	    	grid-template: repeat(1, [row] minmax(104px, 1fr))/repeat(2, [col] 1fr);
+		}
 	    grid-gap: 0;
 	    background: $bgZero;
 		.c-grid-container__item {
 		    grid-row-start: 1;
 		}	
 		&.-odd {
-			.c-grid-container__item.-content {
-			    grid-column-start: 1;
-			}
-			.c-grid-container__item.-image {
-				grid-column-start: 2;
-			}
+			@media (min-width: 320px) {
+				.c-grid-container__item.-content {
+			    	grid-column-start: 1;
+			    	grid-row-start: 1;
+				}
+				.c-grid-container__item.-image {
+					grid-column-start: 1;
+					grid-row-start: 2;
+				}
+			}				
+			@media (min-width: 1024px) {
+				.c-grid-container__item.-content {
+			    	grid-column-start: 1;
+			    	grid-row-start: 1;
+				}
+				.c-grid-container__item.-image {
+					grid-column-start: 2;
+					grid-row-start: 1;
+				}
+			}			
 		}
 		&.-even {
-			.c-grid-container__item.-content {
-				grid-column-start: 2;
-			}
-			.c-grid-container__item.-image {
-		    	grid-column-start: 1;
-			}
+
+
+			@media (min-width: 320px) {
+				.c-grid-container__item.-content {
+			    	grid-column-start: 1;
+			    	grid-row-start: 1;
+				}
+				.c-grid-container__item.-image {
+					grid-column-start: 1;
+					grid-row-start: 2;
+				}
+			}				
+			@media (min-width: 1024px) {
+				.c-grid-container__item.-content {
+					grid-column-start: 2;
+					grid-row-start: 1;
+				}
+				.c-grid-container__item.-image {
+		    		grid-column-start: 1;
+		    		grid-row-start: 1;
+				}
+			}	
+
+
+
 		}
 		.c-grid-container__item.-content {
 		    display: grid;
@@ -31,9 +66,11 @@
 		    -webkit-box-align: center !important;
 		    -ms-flex-align: center !important;
 		    align-items: center !important;
-		    justify-items: center !important;    
-		    max-width: 540px;
-		    padding: 88px 24px;	
+		    justify-items: center !important; 
+			@media (min-width: 1024px) {		       
+		    	max-width: 540px;
+			}
+		    padding: 88px 24px 64px;	
 		}
 		.c-grid-container__item.-image {
 			background-size: cover !important;

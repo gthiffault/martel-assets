@@ -1,6 +1,17 @@
 .c-home_clients_ul {
 	li {
+		@media (min-width: 841px) {
 		margin-bottom: 64px;
+		}
+  @media (max-width: 840px) {
+		margin-bottom: 48px;  	
+}   
+  @media (max-width: 600px) {
+  			margin-bottom: 32px;
+}  
+  @media (max-width: 540px) {
+  			margin-bottom: 24px;
+}		
 		img {
 			width: 100%;
 		}

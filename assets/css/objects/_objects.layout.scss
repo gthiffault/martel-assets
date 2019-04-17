@@ -189,6 +189,43 @@ $inuit-use-markup-fix: false !default;
 
 }
 
+.c-home_clients {
+  @media (max-width: 840px) {
+.o-layout--xlarge {
+  margin-left: -48px;
+
+  > .o-layout__item {
+    padding-left: 48px;
+  }
+
+}    
+}
+  @media (max-width: 600px) {
+.o-layout--xlarge {
+  margin-left: -32px;
+
+  > .o-layout__item {
+    padding-left: 32px;
+  }
+
+}    
+}
+  @media (max-width: 540px) {
+.o-layout--xlarge {
+  margin-left: -24px;
+
+  > .o-layout__item {
+    padding-left: 24px;
+  }
+
+}    
+}
+}
+
+
+
+
+
 .o-layout--huge {
   margin-left: -$inuit-global-spacing-unit-huge;
 

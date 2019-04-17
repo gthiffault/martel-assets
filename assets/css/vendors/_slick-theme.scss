@@ -21,14 +21,6 @@ $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
 
-@function slick-image-url($url) {
-    @if function-exists(image-url) {
-        @return image-url($url);
-    }
-    @else {
-        @return url($slick-loader-path + $url);
-    }
-}
 
 @function slick-font-url($url) {
     @if function-exists(font-url) {
@@ -47,16 +39,6 @@ $slick-opacity-not-active: 0.25 !default;
     }
 }
 
-/* Icons */
-@if $slick-font-family == "slick" {
-    @font-face {
-        font-family: "slick";
-        src: slick-font-url("slick.eot");
-        src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
-        font-weight: normal;
-        font-style: normal;
-    }
-}
 
 /* Arrows */
 
@@ -64,44 +46,27 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 32px;
+    width: 18px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    padding: 0;
     border: none;
     outline: none;
     &:hover, &:focus {
         outline: none;
-        background: transparent;
         color: transparent;
-        &:before {
-            opacity: $slick-opacity-on-hover;
-        }
+
     }
     &.slick-disabled:before {
         opacity: $slick-opacity-not-active;
     }
-    &:before {
-        font-family: $slick-font-family;
-        font-size: 20px;
-        line-height: 1;
-        color: $slick-arrow-color;
-        opacity: $slick-opacity-default;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
 }
 
 .slick-prev {
-    left: -25px;
+    background: url(../images/icons/left-arrow.svg);
     [dir="rtl"] & {
         left: auto;
         right: -25px;
@@ -115,7 +80,8 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+	right: 0;
+	background: url(../images/icons/right-arrow.svg);
     [dir="rtl"] & {
         left: -25px;
         right: auto;
