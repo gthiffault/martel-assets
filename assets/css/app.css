@@ -3500,7 +3500,8 @@ form {
       right: 0;
       float: right; }
   .services ul {
-    list-style-type: none;
+    list-style-type: disc;
+    list-style-position: inside;
     margin-left: 0; }
 
 .c-navigation_projects {

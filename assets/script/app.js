@@ -215,7 +215,7 @@
 											$('#career').find("input[type=text], textarea, select, input[type=email], input[type=select], input[type=radiobutton],input[type=file] ").val("");
 											$('#noFile-cv').text("");
 											$('.succes').addClass('-active');
-											$('.succes').append('<div class="c-confirmation"><div class="close"></div>Texte à modifier</div>');
+											$('.succes').append('<div class="c-confirmation"><div class="close"></div>Merci d’avoir soumis votre candidature.<br>Nous communiquerons avec vous si votre profil correspond aux exigences du poste.</div>');
 											$('.close').on('click',function() {
 												$('.succes').fadeOut(500, function(){ $(this).remove();});
 											})               
@@ -465,7 +465,7 @@
 			Barba.Dispatcher.on('initStateChange', function(currentStatus) {
 
 			})
-			
+
 			/* *****************************************************************
 	   			#TRANSITION COMPLETED
 	    	***************************************************************** */		
