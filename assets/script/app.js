@@ -207,6 +207,9 @@
 								$.post({
 									url: '/',
 									dataType: 'json',
+								    cache: false,
+								    contentType: false,
+								    processData: false,									
 									data: $(this).serialize(),
 									success: function(response) {
 										if (response.success) {
