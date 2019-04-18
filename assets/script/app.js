@@ -464,9 +464,8 @@
 
 			Barba.Dispatcher.on('initStateChange', function(currentStatus) {
 
-
-
 			})
+			
 			/* *****************************************************************
 	   			#TRANSITION COMPLETED
 	    	***************************************************************** */		
@@ -495,13 +494,12 @@
 						marginTop: -80,
 						opacity:0,
 					});
-					TweenLite.to($('.c-load-pages_logo'), 0.0, {
+					TweenLite.to($('.c-load-pages_logo'), 0.5, {
 						top: "-120%",
 						ease: Sine.easeOut, 
 						delay: 2, 
 						opacity:0,
 					});					   					
-
 
 	})	
 

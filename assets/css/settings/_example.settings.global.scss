@@ -38,7 +38,12 @@ $heightZero : 114px;
  $spacingZero : 114px;
 
  @mixin spacingZero() {
-	margin-bottom: 114px;
+ 	@media (min-width: 720px) {
+		margin-bottom: 96px;
+	} 	
+ 	@media (min-width: 840px) {
+		margin-bottom: 114px;
+	}
 }
 
 
@@ -55,6 +60,9 @@ $heightZero : 114px;
 
 
  @mixin accordionStyle() {
+ 	html {
+ 		display: none;
+ 	}
  	.c-accordion_ul {
  		list-style-type: none;
  		margin-left: 0;
@@ -96,9 +104,9 @@ $heightZero : 114px;
 			}
 			&:last-child {
 				p:last-child {
-					margin-bottom: 24px;
+					margin-bottom: 0;
 				}
 			}
 		}
-	}	
+	}
 }

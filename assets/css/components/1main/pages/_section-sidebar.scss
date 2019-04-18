@@ -10,14 +10,39 @@
 		position: relative;
 	}
 	.c-content {
-		margin-top: 144px;
+		@media screen and (min-width: 720px) {		
+			margin-top: 128px;
+		}		
+		@media screen and (min-width: 840px) {		
+			margin-top: 114px;
+		}
 		margin-bottom: 0;
 		text-align: left;
 
+
+
+
+
 		@media screen and (min-width: 840px) {
-			padding-right: 88px;
+			padding-right: 32px;
 			@include spacingZero();
+		}				
+		@media screen and (min-width: 960px) {
+			padding-right: 40px;
+		}				
+		@media screen and (min-width: 1024px) {
+			padding-right: 48px;
+		}			
+		@media screen and (min-width: 1148px) {
+			
+			padding-right: 56x; 
+		}		
+		@media screen and (min-width: 1440px) {
+			padding-right: 88px;
+ 
 		}
+
+
 		flex-direction: column;
 
 		&.-google-maps {
@@ -49,20 +74,20 @@
 			display: none;
 		}
 		@media screen and (min-width: 840px) {
-			padding: 144px 32px 124px; 
+			padding: 114px 32px 124px; 
 			display: flex;
 		}				
 		@media screen and (min-width: 960px) {
-			padding: 144px 40px 124px; 
+			padding: 114px 40px 124px; 
 		}				
 		@media screen and (min-width: 1024px) {
-			padding: 144px 48px 124px; 
+			padding: 114px 48px 124px; 
 		}			
 		@media screen and (min-width: 1148px) {
-			padding: 144px 56px 124px; 
+			padding: 114px 56px 124px; 
 		}		
 		@media screen and (min-width: 1440px) {
-			padding: 144px 88px 124px; 
+			padding: 114px 88px 124px; 
 		}	
 		ul {
 			margin-bottom: 0;
@@ -187,6 +212,9 @@ width: calc(1366px/3 - 16px);
 
 
 .c-career_single {
+	@media (max-width: 839px) {
+		@include spacingZero();
+	}	
  	.c-accordion_ul {
  		margin-bottom: 0;
 		.c-accordion_li {
