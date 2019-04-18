@@ -211,6 +211,15 @@ width: calc(1366px/3 - 16px);
 }
 
 
+@media (max-width: 839px) and (min-width: 320px) {
+  .c-career_single {
+    margin-bottom: 96px; } }
+
+@media (max-width: 839px) and (min-width: 840px) {
+  .c-career_single {
+    margin-bottom: 114px; } }
+
+
 .c-career_single {
 	@media (max-width: 839px) {
 		@include spacingZero();

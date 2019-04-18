@@ -230,11 +230,7 @@ form {
 
 
 .availableJobs {
-	.c-form {
-		@media (max-width: 839px) {
-			@include spacingZero();
-		}
-	}
+
 	.c-single-device {
 		@media (max-width: 839px) {
 			display: block;
