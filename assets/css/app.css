@@ -3450,6 +3450,9 @@ form {
       text-align: left; }
   .services .c-services-zero {
     margin-bottom: 56px; }
+    @media (min-width: 960px) {
+      .services .c-services-zero .o-wrapper {
+        min-height: 548px; } }
     .services .c-services-zero .c-services_content {
       background: #C5A37E; }
       @media (min-width: 320px) {

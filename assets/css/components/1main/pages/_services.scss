@@ -67,6 +67,11 @@
 		}
 	}
 	.c-services-zero {
+		.o-wrapper {
+			@media (min-width: 960px){
+				min-height: 548px;
+			}
+		}
 		margin-bottom: 56px;
 		.c-services_content {
 			background: $secondary;
