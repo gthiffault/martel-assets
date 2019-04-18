@@ -229,3 +229,13 @@ form {
 		}
 	}
 }
+
+
+
+.availableJobs {
+	.c-form {
+		@media (max-width: 839px) {
+			@include spacingZero();
+		}
+	}
+}

@@ -25,4 +25,15 @@
 	a {
 		text-decoration: none;
 	}
+	@media (max-width: 599px) {
+		* {
+			text-align: center;
+		}
+		.c-facebook {
+			display: inline-block !important;
+		}
+		.-logo {
+			margin-bottom: 40px;
+		}
+	}
 }

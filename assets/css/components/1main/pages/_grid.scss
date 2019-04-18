@@ -77,9 +77,15 @@
 }
 
 .c-gallery {
+	h2 {
+		text-align: left;
+	}
 	.c-grid-container {
 	    display: grid;
-	    @media (min-width: 1024px) {
+	    @media (min-width: 320px) {
+	    	grid-template: repeat(4, [row] minmax(104px, 1fr))/repeat(1, [col] 1fr);
+		}	    
+	    @media (min-width: 840px) {
 	    	grid-template: repeat(2, [row] minmax(104px, 1fr))/repeat(2, [col] 1fr);
 		}
 		&.-odd {
@@ -88,13 +94,34 @@
 				.c-grid-container__item.-vertical {
 			    	grid-column-start: 1;
 			    	grid-row-start: 1;
+			    	grid-row: row 2 / span 2;
+			    	margin-bottom: 24px;
+			    	div {
+			    		background-size: cover !important;
+			    		height: 100%;
+			    		width: 100%;
+			    	}
 				}
-				.c-grid-container__item.-horizontal {
+				.c-grid-container__item.-horizontal.-first {
 					grid-column-start: 1;
-					grid-row-start: 2;
+					grid-row-start: 1;
+					grid-row: 1 / span 1;
+					margin-bottom: 24px;
+			    	div {
+			    		background-size: cover !important;
+			    	}					
+				}
+				.c-grid-container__item.-horizontal.-last {
+					grid-column-start: 1;
+					grid-row-start: 3;
+					grid-row: 4 / span 1;
+					margin-bottom: 24px;
+			    	div {
+			    		background-size: cover !important;
+			    	}					
 				}
 			}				
-			@media (min-width: 1024px) {
+			@media (min-width: 840px) {
 				.c-grid-container__item.-vertical {
 			    	grid-column-start: 1;
 			    	grid-row-start: 1;
@@ -134,13 +161,34 @@
 				.c-grid-container__item.-vertical {
 			    	grid-column-start: 1;
 			    	grid-row-start: 1;
+			    	grid-row: row 2 / span 2;
+			    	margin-bottom: 24px;
+			    	div {
+			    		background-size: cover !important;
+			    		height: 100%;
+			    		width: 100%;
+			    	}
 				}
-				.c-grid-container__item.-horizontal {
+				.c-grid-container__item.-horizontal.-first {
 					grid-column-start: 1;
-					grid-row-start: 2;
+					grid-row-start: 1;
+					grid-row: 1 / span 1;
+					margin-bottom: 24px;
+			    	div {
+			    		background-size: cover !important;
+			    	}					
+				}
+				.c-grid-container__item.-horizontal.-last {
+					grid-column-start: 1;
+					grid-row-start: 3;
+					grid-row: 4 / span 1;
+					margin-bottom: 24px;
+			    	div {
+			    		background-size: cover !important;
+			    	}					
 				}
 			}				
-			@media (min-width: 1024px) {
+			@media (min-width: 840px) {
 			.c-grid-container__item.-vertical {
 			    	grid-column-start: 2;
 			    	grid-row-start: 1;

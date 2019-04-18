@@ -81,6 +81,7 @@ responsive: [
 $(document).ready(function() {
 $('.c-home-services_ul').slick({
   infinite: true,
+  arrows: false,
 responsive: [
     {
       breakpoint: 9999999999,

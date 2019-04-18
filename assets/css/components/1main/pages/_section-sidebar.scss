@@ -13,12 +13,13 @@
 		margin-top: 144px;
 		margin-bottom: 0;
 		text-align: left;
-		@include accordionStyle();
+
 		@media screen and (min-width: 840px) {
 			padding-right: 88px;
+			@include spacingZero();
 		}
 		flex-direction: column;
-		@include spacingZero();
+
 		&.-google-maps {
 			margin-top: 0;
 			padding-right: 0;
@@ -119,8 +120,9 @@
 		}
 	}
 	.c-project-single_content {
-
+@media (min-width:840px) {
 		@include spacingZero();		
+	}
 	}		
 }	
 
