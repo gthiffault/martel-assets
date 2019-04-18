@@ -493,7 +493,8 @@
 						ease: Sine.easeOut, 
 						delay: 0.75, 
 						marginTop: -80,
-						opacity:0
+						opacity:0,
+						zIndex:-4
 					});   					
 
 
