@@ -77,3 +77,28 @@ $heightZero : 114px;
 		}
 	}
 }	
+
+
+.c-career_single {
+ 	.c-accordion_ul {
+ 		list-style-type: none;
+ 		margin-left: 0;
+		.c-accordion_li {
+			border-top: 1px solid #979797;
+			padding-top: 24px;
+			.c-accordion_content {
+				display: none;
+			}
+			h3 {
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			&:last-child {
+				p:last-child {
+					margin-bottom: 24px;
+				}
+			}
+		}
+	}	
+}

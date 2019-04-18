@@ -26,6 +26,9 @@
   padding: 16px 32px;
   transition: $global-transition;
   border-radius: 6px;
+  &:focus {
+    outline: none !important;
+  }
 }
 
 

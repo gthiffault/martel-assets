@@ -2,3 +2,15 @@
 	@include spacingZero();
 	text-align: center;
 }
+
+
+.c-content-career {
+	@include spacingZero();
+	.c-content-career_content {
+	border-top: 1px solid #979797;
+	padding-top: 24px;		
+	}	
+	h2 {
+		text-align: left;
+	}
+}

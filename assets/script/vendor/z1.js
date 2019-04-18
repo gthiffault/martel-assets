@@ -124,6 +124,10 @@ $(window).on('load',function(){
   // initialize
   $container.masonry({
     //columnWidth: 200,
+    fitWidth: true,
+    resize: true,
+  	columnWidth: 160,
+  	gutter: 20,    
     itemSelector: '.item',
     // horizontalOrder: true,
     percentPosition: true
@@ -143,14 +147,46 @@ $('#my-form').submit(function(ev) {
         success: function(response) {
             if (response.success) {
                 $('#thanks').fadeIn();
+				$('#my-form').find("input[type=text], textarea, select, input[type=email], input[type=select], input[type=radiobutton],input[type=file] ").val("");
+				$('.succes').addClass('-active');
+				$('.succes').append('<div class="c-confirmation"><div class="close"></div>Merci d’avoir communiqué avec nous.<br>Nous vous contacterons dans les plus brefs délais.</div>');
+$('.close').on('click',function() {
+	$('.succes').fadeOut(500, function(){ $(this).remove();});
+})
+
             } else {
-                // response.error will be an object containing any validation errors that occurred, indexed by field name
-                // e.g. response.error.fromName => ['From Name is required']
-                alert('An error occurred. Please try again.');
             }
         }
     });
 });
+
+$('#career').submit(function(ev) {
+    // Prevent the form from actually submitting
+    ev.preventDefault();
+
+    // Send it to the server
+    $.post({
+        url: '/',
+        dataType: 'json',
+        data: $(this).serialize(),
+        success: function(response) {
+            if (response.success) {
+                $('#thanks').fadeIn();
+											$('#career').find("input[type=text], textarea, select, input[type=email], input[type=select], input[type=radiobutton],input[type=file] ").val("");
+											$('#noFile-cv').text("");
+				$('.succes').addClass('-active');
+				$('.succes').append('<div class="c-confirmation"><div class="close"></div>Texte à modifier</div>');
+$('.close').on('click',function() {
+	$('.succes').fadeOut(500, function(){ $(this).remove();});
+})               
+            } else {
+
+            }
+        }
+    });
+});
+
+
 
 
 // JavaScript for label effects only
@@ -191,3 +227,46 @@ $('.c-accordion_title').on('click',function() {
 	$(this).toggleClass('js-parent-active');
 })
 
+
+// external js: masonry.pkgd.js
+
+
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  gutter: '.gutter-sizer',
+  percentPosition: true
+});
+
+							$('#chooseFile-cv').bind('change', function () {
+								var filename = $("#chooseFile-cv").val();
+								if (/^\s*$/.test(filename)) {
+									$(".c-file-upload").removeClass('active');
+									$("#noFile-cv").text("No file chosen...");
+
+								} else {
+									$(".c-file-upload.-cv").addClass('active');
+									$("#noFile-cv").text(filename.replace("C:\\fakepath\\", ""));
+								}
+							});
+
+$("#career").validate({
+    messages: {
+        fromEmail: "*Champs requis",
+        fromName: "*Champs requis",
+        attachment: "*Champs requis",
+        phone:"*Champs requis"
+    }
+});
+
+
+
+
+$("#my-form").validate({
+    messages: {
+        fromEmail: "*Champs requis",
+        fromName: "*Champs requis",
+        phone:"*Champs requis",
+        message:"*Champs requis",
+    }
+});

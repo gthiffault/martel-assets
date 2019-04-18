@@ -14,7 +14,9 @@
 		margin-bottom: 0;
 		text-align: left;
 		@include accordionStyle();
-		padding-right: 88px;
+		@media screen and (min-width: 840px) {
+			padding-right: 88px;
+		}
 		flex-direction: column;
 		@include spacingZero();
 		&.-google-maps {
@@ -42,7 +44,25 @@
 		}
 	}	
 	.c-sidebar {
-		padding: 144px 88px 124px 88px; 
+		@media screen and (min-width: 320px) {		
+			display: none;
+		}
+		@media screen and (min-width: 840px) {
+			padding: 144px 32px 124px; 
+			display: flex;
+		}				
+		@media screen and (min-width: 960px) {
+			padding: 144px 40px 124px; 
+		}				
+		@media screen and (min-width: 1024px) {
+			padding: 144px 48px 124px; 
+		}			
+		@media screen and (min-width: 1148px) {
+			padding: 144px 56px 124px; 
+		}		
+		@media screen and (min-width: 1440px) {
+			padding: 144px 88px 124px; 
+		}	
 		ul {
 			margin-bottom: 0;
 			li {
@@ -54,7 +74,15 @@
 				.c-sidebar_title {
 					font-size: 14px;
 					line-height: 40px;
+		@media screen and (min-width: 840px) {
+					letter-spacing: 4px;
+		}	
+		@media screen and (min-width: 960px) {
+					letter-spacing: 6px;
+		}				
+		@media screen and (min-width: 1148px) {
 					letter-spacing: 8px;
+		}		
 					margin-bottom: 0;
 					text-transform: uppercase;
 				}
@@ -90,8 +118,8 @@
 			background: $bgZero;
 		}
 	}
-	.c-project-single_content,
-	.c-contact-us {
+	.c-project-single_content {
+
 		@include spacingZero();		
 	}		
 }	
@@ -118,7 +146,6 @@
 			background: $secondary;
 		}
 	}
-	.c-project-single_content,
 	.c-contact-us {
 		@include spacingZero();		
 	}		
@@ -157,3 +184,20 @@ width: calc(1366px/3 - 16px);
 }
 
 
+.c-career_single {
+ 	.c-accordion_ul {
+ 		margin-bottom: 0;
+		.c-accordion_li {
+			&:last-child {
+				p:last-child {
+					margin-bottom: 24px !important;
+				}
+			}
+		}
+	}	
+}
+
+
+.c-project_single {
+	@include spacingZero();	
+}

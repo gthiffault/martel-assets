@@ -56,9 +56,6 @@
 		    		grid-row-start: 1;
 				}
 			}	
-
-
-
 		}
 		.c-grid-container__item.-content {
 		    display: grid;
@@ -77,4 +74,106 @@
 			background-position: center center !important;
 		}	
 	}
+}
+
+.c-gallery {
+	.c-grid-container {
+	    display: grid;
+	    @media (min-width: 1024px) {
+	    	grid-template: repeat(2, [row] minmax(104px, 1fr))/repeat(2, [col] 1fr);
+		}
+		&.-odd {
+			
+			@media (min-width: 320px) {
+				.c-grid-container__item.-vertical {
+			    	grid-column-start: 1;
+			    	grid-row-start: 1;
+				}
+				.c-grid-container__item.-horizontal {
+					grid-column-start: 1;
+					grid-row-start: 2;
+				}
+			}				
+			@media (min-width: 1024px) {
+				.c-grid-container__item.-vertical {
+			    	grid-column-start: 1;
+			    	grid-row-start: 1;
+			    	padding-right: 12px;
+			    	grid-row: row 1 / span 2;
+			    	margin-bottom: 24px;
+			    	div {
+			    		background-size: cover !important;
+			    		height: 100%;
+			    		width: 100%;
+			    	}
+				}
+				.c-grid-container__item.-horizontal.-first {
+					grid-column-start: 2;
+					grid-row-start: 1;
+					grid-row: 1 / span 1;
+					padding-left: 12px;
+					margin-bottom: 24px;
+			    	div {
+			    		background-size: cover !important;
+			    	}					
+				}
+				.c-grid-container__item.-horizontal.-last {
+					grid-column-start: 2;
+					grid-row-start: 2;
+					grid-row: 2 / span 1;
+					padding-left: 12px;
+					margin-bottom: 24px;
+			    	div {
+			    		background-size: cover !important;
+			    	}					
+				}				
+			}			
+		}
+		&.-even {
+			@media (min-width: 320px) {
+				.c-grid-container__item.-vertical {
+			    	grid-column-start: 1;
+			    	grid-row-start: 1;
+				}
+				.c-grid-container__item.-horizontal {
+					grid-column-start: 1;
+					grid-row-start: 2;
+				}
+			}				
+			@media (min-width: 1024px) {
+			.c-grid-container__item.-vertical {
+			    	grid-column-start: 2;
+			    	grid-row-start: 1;
+			    	padding-left: 12px;
+			    	grid-row: row 1 / span 2;
+			    	margin-bottom: 24px;
+			    	div {
+			    		background-size: cover !important;
+			    		height: 100%;
+			    		width: 100%;
+			    	}
+				}
+				.c-grid-container__item.-horizontal.-first {
+					grid-column-start: 1;
+					grid-row-start: 1;
+					grid-row: 1 / span 1;
+					padding-right: 12px;
+					margin-bottom: 24px;
+			    	div {
+			    		background-size: cover !important;
+			    	}					
+				}
+				.c-grid-container__item.-horizontal.-last {
+					grid-column-start: 1;
+					grid-row-start: 2;
+					grid-row: 2 / span 1;
+					padding-right: 12px;
+					margin-bottom: 24px;
+			    	div {
+			    		background-size: cover !important;
+			    	}					
+				}	
+			}	
+		}		
+	}		
 }
