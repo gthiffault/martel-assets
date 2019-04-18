@@ -494,8 +494,13 @@
 						delay: 0.75, 
 						marginTop: -80,
 						opacity:0,
-						zIndex:-4
-					});   					
+					});
+					TweenLite.to($('.c-load-pages_logo'), 0.0, {
+						top: "-120%",
+						ease: Sine.easeOut, 
+						delay: 2, 
+						opacity:0,
+					});					   					
 
 
 	})	
