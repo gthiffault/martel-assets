@@ -10,8 +10,11 @@
 			margin-left: 0 !important;
 		}			
 	}
+	.c-image_bg {
+		background: #1F1E1E;
+	}
 	.c-image {
-		    background: #1F1E1E;
+		
 		img {
     filter: grayscale(70%);
     opacity: 0.7;			

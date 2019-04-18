@@ -3396,8 +3396,9 @@ form {
     @media (max-width: 960px) {
       .services .c-services_flex {
         margin-left: 0 !important; } }
+  .services .c-image_bg {
+    background: #1F1E1E; }
   .services .c-image {
-    background: #1F1E1E;
     height: 100%;
     top: 0; }
     .services .c-image img {
