@@ -203,14 +203,12 @@
 							});
 
 							$('#career').submit(function(ev) {
+								var formData = new FormData(this);
 								ev.preventDefault();
 								$.post({
 									url: '/',
 									dataType: 'json',
-								    cache: false,
-								    contentType: false,
-								    processData: false,									
-									data: $(this).serialize(),
+									data: formData,
 									success: function(response) {
 										if (response.success) {
 											$('#thanks').fadeIn();
@@ -222,7 +220,10 @@
 												$('.succes').fadeOut(500, function(){ $(this).remove();});
 											})               
 										}
-									}
+									},
+		        					cache: false,
+		        					contentType: false,
+		        					processData: false								
 								});
 							});
 
